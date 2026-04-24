@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    
+
     <!-- <Javascript bootstrap -->
-    
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="bankapp.css">
 
     <title>Bank App</title>
 </head>
+
 <body>
-    
+
     <div class="container mt-5">
         <h1 class="text-center">Bank App</h1>
 
         <div class="card p-3 text-center">
             <h4>Balance: &#8377; <span id="balance">0</span></h4>
+            <input type="number" id="initial-balance" class="form-control mt-2" placeholder="Enter initial balance">
+            <button class="btn btn-primary mt-2" onclick="setBalance()">Set Balance</button>
         </div>
 
         <div class="card p-3 mt-3">
@@ -59,7 +63,8 @@
             </div>
         </div>
     </div>
-    
+
     <script src="bankapp.js"></script>
 </body>
+
 </html>
